@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "curso-ciencia-datos"
+version = "0.1.0"
+description = "Curso de Introducción a la Ciencia de Datos e IA"
+authors = [{name = "Usuario"}]
+requires-python = ">=3.8"
+dependencies = [
+    "jupyter",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "ruff",
+]
